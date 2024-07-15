@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Area Of Shapes</title>
+  
+</head>
+<body>
+  <div class="calculator">
+    <h1>Area Of Shapes </h1>
+    <div class="input-container selector">
+      <label for="shape">Select a shape:</label>
+      <select id="shape" onchange="selectShape()">
+        <option value="triangle">Triangle</option>
+        <option value="circle">Circle</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="square">Square</option>
+        <option value="parallelogram">Parallelogram</option>
+      </select>
+    </div>
+    <div id="input-fields">
+      <div class="input-container" id="length-div">
+        <label for="length">Length:</label>
+        <input type="number" id="length">
+      </div>
+      <div class="input-container" id="width-div">
+        <label for="width">Width:</label>
+        <input type="number" id="width">
+      </div>
+      <div class="input-container" id="height-div">
+        <label for="height">Height:</label>
+        <input type="number" id="height">
+      </div>
+      <button onclick="calculateArea()">Calculate Area</button>
+      <p id="result"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
